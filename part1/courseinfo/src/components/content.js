@@ -2,8 +2,8 @@ import React from "react";
 
 const Content = ({ parts }) => (
   <div>
-    {parts.map((part) => (
-      <p>
+    {parts.map((part, key) => (
+      <p key={key}>
         {part.name} {part.exercises}
       </p>
     ))}
